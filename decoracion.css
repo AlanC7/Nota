@@ -1,0 +1,225 @@
+:root
+{
+	--azul-oscuro:#17202A;
+	--azul-claro:#005994;
+	--azul: #0685D9;
+	--rojo: #7B241C;
+	--rojo-claro: #c22918;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: linear-gradient(to bottom,var(--azul-claro),var(--azul-oscuro));
+	height: 100vh;
+}
+h5
+{
+ 	letter-spacing: 2px;
+ 	text-align: center;
+ 	padding: 10px;
+}
+.Contenedor
+{
+
+	color: white; 
+	font-family: 'Raleway', sans-serif;
+	/*background:rgba(0, 0, 0, 0.3);*/
+	height: 100vh;
+	width: 500px;
+	margin: 0 auto;	
+	max-width: 80%;
+	border-radius:10px;
+
+
+
+}
+/*Encabezado */
+.Encabezado
+{
+	padding: 10px;
+	background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.0));
+	border-radius:10px;
+	
+}
+.Encabezado:hover
+{	
+	background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
+	transition-property: background-image;
+	transition-duration: 1s;
+	/*transition: background-image 1s;*/
+}
+.fecha{text-align: left;}
+h1{ padding: 10px; text-align: center;}
+
+
+/*Agg tareas */
+.Agg-tarea
+{
+	background-color:white;
+	height: 180px;
+	display: flex;
+	/*padding: 0px 10px 10px 0px;*/
+	margin-top: 10px;
+	border-radius: 10px;
+	align-items:center;
+	gap: 5%;
+}
+input
+{
+	height: 10%;
+	width: 25%;
+	padding: 10px;
+	text-align: left;
+	margin-left: 10px;
+	border-radius: 10px;
+	/*border-color: var(--azul-claro);*/
+	border-color:transparent;
+	transition-property: background-color,color,border-color;
+	transition-duration: 0.5s;
+}
+input:focus
+{
+	border-color:black;
+	background-color:var(--azul-oscuro);
+	color: white;
+	transition-property: background-color,color,border-color;
+	transition-duration: 0.5s;
+}
+textarea
+{
+	resize: none;
+	height: 78%;
+	width: 50%;
+	padding: 10px;
+	text-align: left;
+	margin-left: -15px;
+	border-radius: 10px;
+	transition-property: background-color,color,border-color;
+	transition-duration: 0.5s
+}
+#apunte:focus
+{
+	color: white;
+	background-color:var(--azul-oscuro);
+	transition-property: background-color,color,border-color;
+	transition-duration: 0.5s;
+}
+.btnagg
+{
+	margin-left: -15px;
+	background-color: var(--azul);
+	color: white;
+	border-color:transparent;
+	border-radius: 20px;
+	font-size: 25px;
+	width: 34px;
+	cursor: pointer;
+}
+.btnagg:hover
+{
+	box-shadow: 0px 0px 8px 4px rgb(132, 150, 255);
+	transform: scale(1.2);
+	transition-property: transform,box-shadow;
+	transition-duration: 0.3s;	
+}
+.btnagg:active
+{
+	background-color:rgb(5, 93, 151);
+	transition-property: background-colo;
+	transition-duration: 2s;	
+}
+
+
+/*Tareas agg */
+.Tareas-agg
+{
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	position: relative;
+	align-items: center;
+	height: 58%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+li
+{ 
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 100%;
+	border-radius: 10px;
+	border-color: transparent;
+	max-width: 98%;
+	list-style: none;
+
+}
+li:hover
+{
+	background-color: #17202A;
+	transition:background-color 0.8s;
+}
+.Titulo-tarea
+{
+	color: #7397e6;
+	text-transform: uppercase;
+	background-color: rgba(109, 109, 109, 0.247);
+	margin0px ;
+	padding: 5px;
+	width: 96%;
+	border-radius: 10px;
+}
+.Contenedor-terea-agg
+{
+	display: flex;
+	gap: 3%;
+	align-items: center;
+	padding: auto;
+	margin: 10px;
+}
+.lista
+{
+	width: 80%;
+	display:flex ;
+	padding: 10px;
+	background-color: black;
+	border-radius: 10px;
+	height: 10%;
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.0));
+	box-shadow: 0px 5px rgba(0, 0, 0, 0.5);	
+	margin-bottom: 20px;
+	font-size: 12px;
+	color: white;
+
+}
+.contenidoAP
+{
+	width: 80%;
+	height: 100px;
+	margin-left:5px;
+}
+.Eliminar
+{
+	align-items: center;
+	background-color: transparent;
+	border-radius: 6px;
+	color: white;
+	padding: 5px;
+	border-color:white;
+	letter-spacing: 1px;
+}
+.Eliminar:hover
+{
+	background-color: var(--rojo-claro);
+	cursor: pointer;
+	border-color: white;
+	box-shadow: 0px 0px 10px 2px rgb(253, 0, 0);
+	transform: scale(1.1);
+	transition-property: background-color,box-shadow,transform;
+	transition-duration: 0.6s;
+	
+} 
