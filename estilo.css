@@ -44,7 +44,11 @@ ul li a
     letter-spacing: 1px;
     position: relative;
 }
-
+ul li a:hover
+{
+    color:rgb(0, 183, 255);
+   
+}
 .conte-logo
 {
     width: 100%;
@@ -63,7 +67,7 @@ ul li a
 .logo
 {
     /*background-color: rgba(255, 255, 255, 0.027);*/
-    padding: 20px;
+    padding: 10px;
     height: 140px;
     width: 140px;
     
@@ -83,7 +87,6 @@ ul li a
 }
 .navegacion nav ul li a:hover:before
 {
-    
     width: 100%;
     background-color: rgb(0, 183, 255);
     transition-property: (background-color,width);
@@ -169,6 +172,11 @@ p
         font-size: 30px ;
 
     }
+    .navegacion nav ul li a:hover:before
+    {
+    transition-property: (background-color,width);
+    transition-duration:0s;
+    }
 
 }
 
@@ -184,7 +192,7 @@ p
        
         padding: 10px;
         font-size: 20px;
-        grid-template-columns:8fr 2fr;
+        grid-template-columns:1fr;
         grid-gap: 10px;
 
     }
@@ -198,6 +206,17 @@ p
     p
     {
         padding: 15px;
+    }
+    .navegacion nav ul li a:hover:before
+    {
+        transition-property: (background-color,width);
+        transition-duration:0s;
+    }
+    .logo
+    {
+        height: 120px;
+        width: 120px;
+    
     }
 
 }
