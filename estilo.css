@@ -146,15 +146,15 @@ ul li a:hover
     grid-gap:20px;
     align-items: center;
     padding:20px 20px 20px 20px;
+   
 }
 
 .contenedor>div
 {
-    
+   
     height: 100%;
     width: 100%;
-    text-align: center;
-    
+    text-align: center; 
    
 }
 
@@ -169,6 +169,9 @@ ul li a:hover
     font-size: x-large;
     font-style:italic;
     font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px;
+   
 }
 
 p
@@ -178,6 +181,7 @@ p
     font-size:18px;
     text-align: justify;
     padding: 30px;
+    width: 100%
     
 }
 
@@ -248,7 +252,7 @@ p
     {
         width: 40%;
         padding: 5px;
-        font-size: 24px ;
+        font-size: 24px;
 
     }
     p
