@@ -184,6 +184,7 @@ p
     .contenedor
     {
         width: 100%;
+        grid-template-columns: 1fr 1fr;
     }
     .cuadro
     {
@@ -217,7 +218,7 @@ p
        
         padding: 10px;
         font-size: 20px;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 10px;
 
     }
