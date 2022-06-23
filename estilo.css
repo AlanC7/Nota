@@ -136,7 +136,40 @@ ul li a:hover
 /* Fin de barra de navigacion*/
 
 
+/*! correccion carrusel */
+.carrusel
+{
+    background-color: rgb(16, 16, 20);
+    padding: 20px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+}
+.correccion
+{
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 20px;
+    color: white;
 
+}
+.correccion p,h5, .carousel-indicators
+{
+    background-color: transparent;
+    color: white;
+}
+.car-titulo
+{
+    color: white;
+}
+.colorboton
+{
+    color: white;
+    background-color: white;
+    
+}
+
+/*! Contenido boddy */
 .contenedor
 {
     width: 70%;
@@ -149,7 +182,7 @@ ul li a:hover
    
 }
 
-.contenedor>div
+.contenedor div
 {
    
     height: 100%;
@@ -174,7 +207,7 @@ ul li a:hover
    
 }
 
-p
+.contenedor p
 {
     background-color: rgb(26, 30, 34);
     color:white;
@@ -228,6 +261,13 @@ p
     { 
         font-size:large;
         font-weight: bold;
+    }
+    .carrusel
+    {
+       
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
 }
