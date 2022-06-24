@@ -7,8 +7,5 @@ window.addEventListener('load',()=>
     
     loader.style.opacity= '0%' 
     loader.style.transition= 'all 1s' 
-    loader.alert(cargo)
     
 })
-
-alert(cago)
