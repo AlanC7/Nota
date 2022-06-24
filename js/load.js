@@ -1,8 +1,9 @@
 window.addEventListener('load',()=>
 {
     var loader=document.querySelector('.loading')
-    var barraNav=document.querySelector('#carrusel').classList.remove("ocultarObjetos")
-    var barraNav=document.querySelector('#bodyscroll').classList.remove("ocultarScroll")
+    var carrusel=document.querySelector('#carrusel').classList.remove("ocultarObjetos")
+    var scrollbody=document.querySelector('#bodyscroll').classList.remove("ocultarScroll")
+    var barraNav=document.querySelector('#barraNav').classList.remove("ocultarObjetos")
     
     loader.style.opacity= '0%' 
     loader.style.transition= 'all 1s' 
