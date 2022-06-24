@@ -22,7 +22,7 @@
 .ocultarObjetos
 {
     opacity: 0%;
-    transition: all 0.5s;
+    transition: all 5s;
 }
 .navegacion
 {
