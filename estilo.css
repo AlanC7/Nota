@@ -5,20 +5,39 @@
     background-color: rgb(16, 16, 20);
    
 }
+
+.loading
+{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 183, 255);
+   
+    
+}
+.ocultarScroll
+{
+    overflow:hidden;
+}
+.ocultarObjetos
+{
+    opacity: 0%;
+    transition: all 0.5s;
+}
 .navegacion
 {
     user-select: none;
     width: 100%;
     background-color: rgb(16, 16, 20);
     display: grid;
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:1fr 1fr;
     align-items: center;
-
+    transition: all 0.5s;
+  
     
 }
 nav
 {
-    
     border-color: white;
     height: 50%;
     padding-bottom: 20px;  
@@ -43,7 +62,7 @@ ul li
 
 ul li a
 {
-    
+    background-color: transparent;
     text-decoration:none;
     color: white;
     letter-spacing: 1px;
@@ -60,6 +79,7 @@ ul li a:hover
     height:100%;
     display:grid;
     grid-template-columns: 2fr 2fr;
+    transition: all 0.5s;
 }
 .cuadro
 {
@@ -139,12 +159,18 @@ ul li a:hover
 /*! correccion carrusel */
 .carrusel
 {
-    background-color: rgb(16, 16, 20);
+    background-color:transparent;
     padding: 20px;
     width: 70%;
     display: grid;
     grid-template-columns: 1fr;
     color: white;
+    transition: all 0.5s;
+    
+}
+.correct-carru
+{
+    position:absolute;
 }
 .correccion
 {
@@ -179,6 +205,7 @@ ul li a:hover
     grid-gap:20px;
     align-items: center;
     padding:20px 20px 20px 20px;
+    transition: all 0.5s;
    
 }
 
@@ -204,7 +231,7 @@ ul li a:hover
     font-style:italic;
     margin-bottom: 30px;
     margin-top: 50px;
-   
+    transition: all 0.5s;
 }
 
 .contenedor p
@@ -222,7 +249,6 @@ ul li a:hover
 
 
 
-
 /* Condiciones para 
 ! hacer responcive
 */
@@ -233,14 +259,15 @@ ul li a:hover
     .navegacion
     {
         grid-template-columns: 1fr;
-        width: 100%;
-
+        transition: all 0.5s;
+    
     }
     
     .contenedor
     {
         width: 100%;
         grid-template-columns: 1fr 1fr;
+        transition: all 0.5s;
     }
   
 
@@ -249,7 +276,7 @@ ul li a:hover
         width:50%;
         padding: 10px;
         font-size: 30px ;
-
+        transition: all 0.5s;
     }
     .navegacion nav ul li a:hover:before
     {
@@ -262,12 +289,17 @@ ul li a:hover
         font-size:large;
         font-weight: bold;
     }
-    .carrusel
+    .logo
     {
-       
+        height: 120px;
+        width: 120px;
+        transition: all 0.5s;
+    }
+    .carrusel
+    {      
         width: 100%;
-        display: grid;
         grid-template-columns: 1fr;
+        transition: all 0.5s;
     }
 
 }
@@ -286,6 +318,7 @@ ul li a:hover
         font-size: 20px;
         grid-template-columns: 1fr;
         grid-gap: 10px;
+        transition: all 0.5s;
 
     }
     .titulo
@@ -293,6 +326,7 @@ ul li a:hover
         width: 40%;
         padding: 5px;
         font-size: 24px;
+        transition: all 0.5s;
 
     }
     p
@@ -308,7 +342,7 @@ ul li a:hover
     {
         height: 120px;
         width: 120px;
-    
+        transition: all 0.5s;
     }
 
 }
