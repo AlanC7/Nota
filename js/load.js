@@ -5,7 +5,7 @@ window.addEventListener('load',()=>
     var barraNav=document.querySelector('#bodyscroll').classList.remove("ocultarScroll")
     
     loader.style.opacity= '0%' 
-    loader.style.transition= 'all 3s' 
+    loader.style.transition= 'all 1s' 
     loader.alert(cargo)
     
 })
