@@ -298,14 +298,14 @@ ul li a:hover
     border: 1px solid;
     border-radius: 10px;
     border-color: white;
-    height: 100%;
-    width: 100%;
+    height: max-content;
+    width:100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-items: center;
     align-items: center;
 }
-.caja-servicios h2
+.caja-servicios h2s
 {
     width: max-content;
     padding: 5px;
