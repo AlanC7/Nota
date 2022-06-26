@@ -55,6 +55,9 @@
   }
   
 /* ! fin de animacion de loader*/
+
+
+
 .navegacion
 {
     user-select: none;
@@ -73,7 +76,7 @@ nav
     height: 50%;
     padding-bottom: 20px;  
 }
-ul
+nav ul
 {  
     
     margin-left: -40px;
@@ -84,14 +87,14 @@ ul
     grid-template-columns: repeat(4,80px);
 
 }
-ul li
+nav ul li
 {
     
     padding: 10px;
     
 }
 
-ul li a
+nav ul li a
 {
     background-color: transparent;
     text-decoration:none;
@@ -254,14 +257,14 @@ ul li a:hover
 {
     user-select: none;
     background-color: rgb(0, 183, 255);
-    width: 50%;
+    width:max-content;
     border-radius: 10px;   
     text-align: center;
     padding: 10px;
     font-size: x-large;
     font-style:italic;
-    margin-bottom: 30px;
-    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-top: 40px;
     transition: all 0.5s;
 }
 
@@ -275,6 +278,85 @@ ul li a:hover
     width: 100%
     
 }
+
+/* ! barra de abajo */
+.contenedor-bajo
+{
+    background-color: rgb(16, 16, 20);
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   
+    justify-items: center;
+    align-items: end;
+  
+}
+.contenedor-bajo .sectores
+{
+   
+    background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));
+    height:100%;
+    width: 100%;
+   
+}
+.contenedor-bajo .sect1
+{
+    height: max-content;
+}
+.contenedor-bajo .sectores .titulo
+{
+    background-color: rgb(10, 131, 30);
+    color: white;
+    padding: 10px;
+    margin: 10px  auto;
+    width: min-content;
+    
+}
+.contenedor-bajo .sectores p
+{
+    color: white;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.contenedor-bajo .sect2
+{
+    width: 100%;
+    height: 100%;
+    display:  grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.contenedor-bajo ul
+{
+    width: 60%;
+    height: min-content;
+    background-color:transparent;
+    list-style: none;
+    display:  grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+   
+}
+.contenedor-bajo .sect2 ul li 
+{
+    padding: 10px;
+    border-radius: 10px;
+}
+.contenedor-bajo  ul li a
+{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+   
+}
+
+/* ! fin barra de abajo */
+
+
+
 
 
 
@@ -304,7 +386,7 @@ ul li a:hover
 
     .titulo
     {
-        width:50%;
+       
         padding: 10px;
         font-size: 30px ;
         transition: all 0.5s;
@@ -332,7 +414,21 @@ ul li a:hover
         grid-template-columns: 1fr;
         transition: all 0.5s;
     }
-
+    .loading
+    {
+        height: 100%;
+    }
+    .contenedor-bajo
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor-bajo ul
+    {
+        
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    
+    }
 }
 
 
@@ -354,7 +450,7 @@ ul li a:hover
     }
     .titulo
     {
-        width: 40%;
+    
         padding: 5px;
         font-size: 24px;
         transition: all 0.5s;
