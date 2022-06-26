@@ -402,10 +402,13 @@ ul li a:hover
 
 
 
+/*! iconos*/
 
-
-
-
+svg
+{
+    color: white;
+    
+}
 /* Condiciones para 
 ! hacer responcive
 */
