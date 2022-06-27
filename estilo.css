@@ -378,18 +378,19 @@ ul li a:hover
 {
     width: 60%;
     height: min-content;
-    background-color:transparent;
+    background-color:red;
     list-style: none;
     display:  grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 20px;
+    
    
 }
-.contenedor-bajo .sect2 ul li 
+.contenedor-bajo  ul li 
 {
     padding: 10px;
     border-radius: 10px;
-    width: 150px;
+    width: 120px;
     text-align:center;
 }
 .contenedor-bajo  ul li a
@@ -476,6 +477,7 @@ svg
         
         grid-template-columns: 1fr;
         grid-gap: 10px;
+        width: 100%;
     
     }
     .conte-servicios
@@ -485,6 +487,7 @@ svg
     .caja-servicios
     {
         grid-template-columns: 1fr;
+
     }
 }
 
