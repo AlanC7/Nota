@@ -3,6 +3,7 @@
     margin: 0px auto;
     font-family: 'Darker Grotesque',sans-serif;
     background-color: rgb(16, 16, 20);
+    /*border: 1px solid red;*/
    
 }
 /* !animacion de loader*/
@@ -14,10 +15,7 @@
     background-color: rgb(0, 183, 255);
    
 }
-.ocultarScroll
-{
-    overflow:hidden;
-}
+.ocultarScroll { overflow:hidden;}
 .ocultarObjetos
 {
     opacity: 0%;
@@ -32,7 +30,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-  }
+}
   .lds-dual-ring:after {
     content: " ";
     display: block;
@@ -57,9 +55,8 @@
 /* ! fin de animacion de loader*/
 
 
-
-.navegacion
-{
+/* ! Barra navegacion / logo  */
+.navegacion{
     user-select: none;
     width: 100%;
     background-color: rgb(16, 16, 20);
@@ -70,65 +67,71 @@
   
     
 }
-nav
-{
-    border-color: white;
-    height: 50%;
-    padding-bottom: 20px;  
+nav{
+    /*border: 1px solid white;*/
+    height: max-content;
+    padding-bottom: 12px; 
+    margin: 10px auto; 
 }
-nav ul
-{  
-    
+nav ul{ 
+    border: 1px solid white; 
+    border-radius: 30px;
+    width: 350px;
+    height:max-content;
     margin:0;
-    padding: 0;
+    padding: 5px;
     list-style: none; 
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4,80px);
-
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
 }
-nav ul li
-{
-    
-    padding: 10px;
-    
+nav ul li{
+    width: max-content;
+    height: max-content;
 }
 
-nav ul li a
-{
+nav ul li a{
     background-color: transparent;
     text-decoration:none;
     color: white;
     letter-spacing: 1px;
     position: relative;
 }
-ul li a:hover
-{
-    color:rgb(0, 183, 255);
-   
+nav ul li a:hover{
+    color:rgb(0, 183, 255); 
 }
-.conte-logo
-{
+/*raya celeste del menu*/
+.navegacion nav ul li a::before{
+    display: block;
+    content: "";
+    bottom:-20px;
+    height: 6px;
+    width: 0%;
+    position: absolute;
+    border-radius: 3px;
+}
+.navegacion nav ul li a:hover:before{
     width: 100%;
-    height:100%;
+    background-color: rgb(0, 183, 255);
+    transition:  all 0.5s;
+}
+.conte-logo{
+    width: 100%;
+    height:max-content;
     display:grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
     transition: all 0.5s;
 }
-.cuadro
-{
+.cuadro{
     background-color: rgb(0, 183, 255);
     width: 100%;
     height: 100%;
-    padding-top: 0px;
-    margin: 0px;
     transform-origin: right;
     transform:skewX(-45deg);
     position: relative;
-    
 }
-.navegacion .conte-logo .cuadro::before
-{ 
+.navegacion .conte-logo .cuadro::before{ 
     display: block;
     content: "";
     width: 90px;
@@ -137,141 +140,84 @@ ul li a:hover
     position:absolute;  
     transform:skewX(45deg);  
 }
-.yo
-{ 
-    background-color:rgb(0, 183, 255); 
-    width: 60%;
-    color: rgb(0, 0, 0);
+.yo{ 
+    background-color:transparent; 
+    width: max-content;
     text-align: center;
     transform:skewX(45deg);  
     margin:50px auto;
-    font-size: x-large;
-    user-select: none;
+    font-size: xx-large;
     font-weight: bold;
 }
-.logo
-{
-    
+.logo{   
     padding: 10px;
-    height: 140px;
-    width: 140px;
-    
+    height: 140px; width: 140px;   
 }
 
-/*raya celeste del menu*/
-.navegacion nav ul li a::before
-{
-    display: block;
-    content: "";
-    bottom:-15px;
-    height: 7px;
-    width: 0%;
-    position: absolute;
-    
-    border-radius: 3px;
-}
-.navegacion nav ul li a:hover:before
-{
-    width: 100%;
-    background-color: rgb(0, 183, 255);
-    transition-property: (background-color,width);
-    transition-duration:0.5s;
-}
 
-.lin
-{
+
+.lin{
     background-color:rgb(191, 237, 255);
     height: 6px;
     margin: 0 auto;
     border-radius: 100%;
      
 }
-
-/* Fin de barra de navigacion*/
+/* !Fin de barra de navigacion*/
 
 
 /*! correccion carrusel */
-.carrusel
-{
+.carrusel{
     background-color:transparent;
-    padding: 20px;
+    padding: 15px;
     width: 70%;
     display: grid;
     grid-template-columns: 1fr;
-    color: white;
-    transition: all 0.5s;
-    
+    transition: all 0.5s;  
 }
-.correct-carru
-{
-    position:absolute;
-}
-.correccion
-{
+.correccion{
     background-color: rgba(0, 0, 0, 0.637);
     border-radius: 20px;
-    color: white;
-
 }
-.correccion p, h5, .carousel-indicators
-{
+.correccion p, h5, .carousel-indicators{
     background-color: transparent;
     color: white;
+    user-select: none;
 }
-.car-titulo
-{
+.car-titulo{
     color: white;
-}
-.colorboton
-{
-    color: white;
-    background-color: white;
-    
 }
 
+
 /*! Contenido boddy */
-.contenedor
-{
-    
+.contenedor{  
     width: 70%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-gap:20px;
     justify-items:center;
-    padding:20px 20px 20px 20px;
+    padding:20px;
     transition: all 0.5s;
-   
 }
-
-.contenedor div
-{
-   
-    
+.contenedor div{
     width: 100%;
-    text-align: center; 
-   
 }
 
-
-.titulo
-{
-    user-select: none;
+.titulo{
     background-color: rgb(0, 183, 255);
     width:max-content;
     height: max-content;
     border-radius: 10px;   
     text-align: center;
-    padding: 10px;
+    padding: 10px ;
     font-size: x-large;
     font-style:italic;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 25px;
     transition: all 0.5s;
 }
 
-.contenedor p
-{
+.contenedor p{
     background-color: rgb(26, 30, 34);
     color:white;
     font-size:18px;
@@ -281,96 +227,65 @@ ul li a:hover
     
 }
 
-
-
 /*! servicios */
-.conte-servicios
-{
+.conte-servicios{
     padding: 5px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-gap: 20px;
-    justify-items: center;
-    
+    grid-gap: 20px; 
 }
-.caja-servicios
-{
-    border: 1px solid;
+.caja-servicios{
+    background-color: rgb(18, 78, 189);
     border-radius: 10px;
-    border-color: white;
     height:100%;
     width:100%;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
 }
-.caja-servicios h2
-{
+.caja-servicios h2{
+    background-color: transparent;
     width: max-content;
-    padding: 5px;
     color: rgb(255, 255, 255);
-    font-size:large;
-  
+    font-size:x-large;
 }
-.caja-servicios img
-{
-    width: 80%;
-    height: 80%;
-    border-radius: 5px;
-
+.caja-servicios img{  
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
 }
-
+/*! fin servicios */
 
 
 
 /* ! barra de abajo */
-
-.contenedor-bajo
-{
-   
+.contenedor-bajo{
     background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));
     width: 100%;
     height: max-content;
     display: grid;
     grid-template-columns: 1fr 2fr;
-   
-    justify-items: center;
     align-items: end;
-    
 }
-.contenedor-bajo .sectores
-{
+.contenedor-bajo .sectores{
     background-color: transparent;
-    /*background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));*/
     height:100%;
-    width: 100%;
-    
+    width: 100%;  
 }
-.contenedor-bajo .sect1
-{
+.contenedor-bajo .sect1{
     height: max-content;
 }
-.contenedor-bajo .sectores .titulo
-{
-    background-color: rgb(10, 131, 30);
+.contenedor-bajo .sectores .titulo{
+    background-color: rgb(29, 131, 72);
     color: white;
-    padding: 10px;
+    padding: 5px;
     margin: 10px  auto;
-    width: min-content;
-    
+    width: max-content;  
 }
-
-.contenedor-bajo .sectores p
-{
+.contenedor-bajo .sectores p{
     color: white;
-    border-radius: 15px;
-    margin: 10px;
     padding: 15px;
 }
-
-.contenedor-bajo .sect2
-{
+.contenedor-bajo .sect2{
     width: 100%;
     height: 100%;
     display:  grid;
@@ -378,8 +293,7 @@ ul li a:hover
     align-items: center;
     justify-items: center;
 }
-.contenedor-bajo ul
-{
+.contenedor-bajo ul{
     margin:0;
     padding: 0;
     width: 60%;
@@ -389,34 +303,26 @@ ul li a:hover
     display:  grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 20px;
-    
-   
 }
-.contenedor-bajo  ul li 
-{
+.contenedor-bajo  ul li {
     padding: 10px;
     border-radius: 10px;
-    width: 120px;
+    width: max-content;
     text-align:center;
 }
-.contenedor-bajo  ul li a
-{
+.contenedor-bajo  ul li a{
     text-decoration: none;
     color:rgb(255, 255, 255);
     padding: 10px;
 }
-
 /* ! fin barra de abajo */
 
 
-
-
 /*! iconos*/
-
-i
-{
+i{
     color: white;   
 }
+
 /* Condiciones para 
 ! hacer responcive
 */
@@ -424,34 +330,30 @@ i
 
 @media (max-width:1080px)
 {
+    .loading
+    {
+        height: 100%;
+    }
     .navegacion
     {
         grid-template-columns: 1fr;
         transition: all 0.5s;
-    
     }
-    
     .contenedor
     {
         width: 100%;
         grid-template-columns: 1fr 1fr;
         transition: all 0.5s;
     }
-  
-
     .titulo
-    {
-       
-        padding: 10px;
+    { 
         font-size: 30px ;
         transition: all 0.5s;
     }
     .navegacion nav ul li a:hover:before
     {
-    transition-property: (background-color,width);
-    transition-duration:0s;
+        transition-duration:0s;
     }
- 
     .yo
     { 
         font-size:large;
@@ -469,14 +371,18 @@ i
         grid-template-columns: 1fr;
         transition: all 0.5s;
     }
-    .loading
+    .conte-servicios
     {
-        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .caja-servicios
+    {
+        grid-template-columns: 1fr;
     }
     .contenedor-bajo
     {
-        grid-template-columns: 1fr ;
-    
+        grid-template-columns: 1fr;
     }
     .contenedor-bajo .sectores
     {
@@ -486,44 +392,28 @@ i
     }
     .contenedor-bajo ul
     {
-        
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         width: 100%;
-       
     }
-    .conte-servicios
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-    .caja-servicios
-    {
-        grid-template-columns: 1fr;
-
-    }
+   
 }
-
-
 
 @media (max-width:980px)
 {
     .contenedor
-    {
-       
+    {  
         padding: 10px;
         font-size: 20px;
         grid-template-columns: 1fr;
         grid-gap: 10px;
         transition: all 0.5s;
-
     }
     .titulo
     {
-    
         padding: 5px;
         font-size: 24px;
         transition: all 0.5s;
-
     }
     p
     {
@@ -531,7 +421,6 @@ i
     }
     .navegacion nav ul li a:hover:before
     {
-        transition-property: (background-color,width);
         transition-duration:0s;
     }
     .logo
@@ -540,6 +429,4 @@ i
         width: 120px;
         transition: all 0.5s;
     }
-
-  
 }
