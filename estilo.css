@@ -79,8 +79,8 @@ nav
 nav ul
 {  
     
-    margin-left: -40px;
-    padding-left: 0px;
+    margin:0;
+    padding: 0;
     list-style: none; 
     display: grid;
     width: 100%;
@@ -328,6 +328,7 @@ ul li a:hover
 
 .contenedor-bajo
 {
+   
     background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));
     width: 100%;
     height: max-content;
@@ -336,16 +337,15 @@ ul li a:hover
    
     justify-items: center;
     align-items: end;
-  
+    
 }
 .contenedor-bajo .sectores
 {
     background-color: transparent;
-   
     /*background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));*/
     height:100%;
     width: 100%;
-   
+    
 }
 .contenedor-bajo .sect1
 {
@@ -360,6 +360,7 @@ ul li a:hover
     width: min-content;
     
 }
+
 .contenedor-bajo .sectores p
 {
     color: white;
@@ -379,6 +380,8 @@ ul li a:hover
 }
 .contenedor-bajo ul
 {
+    margin:0;
+    padding: 0;
     width: 60%;
     height: min-content;
     background-color:transparent;
@@ -412,8 +415,7 @@ ul li a:hover
 
 i
 {
-    color: white;
-    
+    color: white;   
 }
 /* Condiciones para 
 ! hacer responcive
@@ -475,6 +477,12 @@ i
     {
         grid-template-columns: 1fr ;
     
+    }
+    .contenedor-bajo .sectores
+    {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition: all 0.5s;
     }
     .contenedor-bajo ul
     {
