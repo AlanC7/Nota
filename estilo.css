@@ -323,10 +323,12 @@ ul li a:hover
 
 
 
+
 /* ! barra de abajo */
+
 .contenedor-bajo
 {
-    background-color: rgb(16, 16, 20);
+    background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));*
     width: 100%;
     height: max-content;
     display: grid;
@@ -338,8 +340,9 @@ ul li a:hover
 }
 .contenedor-bajo .sectores
 {
+    background-color: transparent;
    
-    background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));
+    /*background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));*/
     height:100%;
     width: 100%;
    
@@ -378,7 +381,7 @@ ul li a:hover
 {
     width: 60%;
     height: min-content;
-    background-color:red;
+    background-color:transparent;
     list-style: none;
     display:  grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -407,7 +410,7 @@ ul li a:hover
 
 /*! iconos*/
 
-svg
+i
 {
     color: white;
     
@@ -470,15 +473,16 @@ svg
     }
     .contenedor-bajo
     {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
+    
     }
     .contenedor-bajo ul
     {
         
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
         width: 100%;
-    
+       
     }
     .conte-servicios
     {
