@@ -328,7 +328,7 @@ ul li a:hover
 
 .contenedor-bajo
 {
-    background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));*
+    background: linear-gradient(to top,rgb(0, 183, 255),rgb(22, 63, 109));
     width: 100%;
     height: max-content;
     display: grid;
