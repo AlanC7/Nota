@@ -152,7 +152,7 @@ nav ul li a:hover{
 }
 .logo{   
     padding: 10px;
-    height: 140px; width: 140px;   
+    height: 130px; width: 130px;   
 }
 
 .lin{
@@ -428,8 +428,8 @@ i{
     .cuadro{height: 90px;}
     .logo
     {
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
         transition: all 0.5s;
     }
     .yo{margin:35px auto;}
