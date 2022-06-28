@@ -7,5 +7,6 @@ window.addEventListener('load',()=>
     var linea=document.querySelector('#linea').classList.remove("ocultarObjetos")
     loader.style.opacity= '0%' 
     loader.style.transition= 'all 1s' 
+    loader.style.display='none'
     
 })

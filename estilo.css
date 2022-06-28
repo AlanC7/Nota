@@ -7,8 +7,7 @@
    
 }
 /* !animacion de loader*/
-.loading
-{
+.loading{
     position:fixed;
     width: 100%;
     height: 100vh;
@@ -16,8 +15,7 @@
    
 }
 .ocultarScroll { overflow:hidden;}
-.ocultarObjetos
-{
+.ocultarObjetos{
     opacity: 0%;
     transition: all 1s;
 }
@@ -56,6 +54,10 @@
 
 
 /* ! Barra navegacion / logo  */
+.SP{
+    position: fixed;
+    top: 0%;
+}
 .navegacion{
     user-select: none;
     width: 100%;
@@ -90,7 +92,6 @@ nav ul li{
     width: max-content;
     height: max-content;
 }
-
 nav ul li a{
     background-color: transparent;
     text-decoration:none;
@@ -154,20 +155,18 @@ nav ul li a:hover{
     height: 140px; width: 140px;   
 }
 
-
-
 .lin{
     background-color:rgb(191, 237, 255);
     height: 6px;
     margin: 0 auto;
     border-radius: 100%;
-     
 }
 /* !Fin de barra de navigacion*/
 
 
 /*! correccion carrusel */
 .carrusel{
+    margin-top:180px;
     background-color:transparent;
     padding: 15px;
     width: 70%;
