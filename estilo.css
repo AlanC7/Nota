@@ -4,7 +4,6 @@
     font-family: 'Darker Grotesque',sans-serif;
     background-color: rgb(16, 16, 20);
     /*border: 1px solid red;*/
-   
 }
 /* !animacion de loader*/
 .loading{
@@ -166,7 +165,7 @@ nav ul li a:hover{
 
 /*! correccion carrusel */
 .carrusel{
-   
+    margin-top: 140px;
     background-color:transparent;
     padding: 15px;
     width: 70%;
@@ -275,7 +274,7 @@ nav ul li a:hover{
     height: max-content;
 }
 .contenedor-bajo .sectores .titulo{
-    background-color: rgb(29, 131, 72);
+    background-color: green;
     color: white;
     padding: 5px;
     margin: 10px  auto;
@@ -310,17 +309,29 @@ nav ul li a:hover{
     width: max-content;
     text-align:center;
 }
+.contenedor-bajo  ul .fb:hover{
+    background-color: #3b5998;
+}
+.contenedor-bajo  ul .ig:hover{
+    background: linear-gradient(to left,#F56040 ,#833AB4, #405DE6) ;
+}
+.contenedor-bajo  ul .wh:hover{
+    background-color: green;
+}
 .contenedor-bajo  ul li a{
     text-decoration: none;
     color:rgb(255, 255, 255);
-    padding: 10px;
+    padding: 10px; 
+    width: 100%;
+    background-color: transparent;
 }
 /* ! fin barra de abajo */
 
 
 /*! iconos*/
 i{
-    color: white;   
+    color: white; 
+    background-color: transparent;
 }
 
 /* Condiciones para 
@@ -371,6 +382,7 @@ i{
     {      
         width: 100%;
         grid-template-columns: 1fr;
+        margin-top: 140px;
         transition: all 0.5s;
     }
     .conte-servicios
@@ -403,6 +415,10 @@ i{
 
 @media (max-width:980px)
 {
+    .carrusel
+    {
+        margin-top: 140px;
+    }
     .contenedor
     {  
         padding: 10px;
